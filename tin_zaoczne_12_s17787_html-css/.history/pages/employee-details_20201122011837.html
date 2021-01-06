@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Gardener</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Professional Gardener</h1>
+        <img src="../images/logo.jpg" alt="Professional Gardener">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li><a href="employee-list.html">Pracownicy</a></li>
+            <li><a href="employee-details.html" class="active">Departamenty</a></li>
+            <li><a href="employee-form.html">Zatrudnienie</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Szczegóły pracownika</h2>
+        <form>
+            <div class="form-group">
+                <label for="firstName">Imię:<sup>*</sup></label>
+                <input type="text" name="firstName" id="firstName" value="Jan" disabled/>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Nazwisko:<sup>*</sup></label>
+                <input type="text" name="lastName" id="lastName" value="Kowalski" disabled/>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:<sup>*</sup></label>
+                <input type="email" name="email" id="email" value="jan@gmail.com" disabled/>
+            </div>
+            <div class="form-buttons">
+                <a href="employee-form.html">Edytuj</a>    
+            </div>  
+        </form>
+        <h2>Szczegóły zatrudnienia</h2>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Departament</th>
+                    <th>Pensja</th>
+                    <th>Data od</th>
+                    <th>Data do</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sprzedaż</td>
+                    <td>5000</td>
+                    <td>2001-01-01</td>
+                    <td>2014-01-01</td>
+                </tr>
+                <tr>
+                    <td>Hr</td>
+                    <td>3000</td>
+                    <td>2009-01-02</td>
+            </tbody>
+        </table>
+        <a href="employee-list.html">Powrót</a>
+    </main>
+    <footer>
+        Piotr Tryfon s17787
+    </footer>
+</body>
+</html>

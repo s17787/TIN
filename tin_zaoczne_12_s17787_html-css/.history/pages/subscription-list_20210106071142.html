@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Gardener</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+</head>
+<body>
+    <header>
+        <h1>Professional Gardener</h1>
+        <img src="../images/logo.jpg" alt="Professional Gardener">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html" >Strona główna</a></li>
+            <li><a href="client-list.html">Firmy</a></li>
+            <li><a href="florist-list.html" >Kwiaciarnie</a></li>
+            <li><a href="subscription-list.html" class="active">Subskrypcje</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Lista subskrypcji</h2>
+        <div style="overflow-x:auto;">
+        <table  class="table-list">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nazwa firmy</th>
+                    <th>Nazwa kwiaciarni</th>
+                    <th>Wartość</th>
+                    <th>Informacje Dodatkowe</th>
+                    <th>Data Od</th>
+                    <th>Data do</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Sony</td>
+                    <td>Wileńska</td>
+                    <td>2341</td>
+                    <td>Wejść oknem</td>
+                    <td>2020-12-12</td>
+                    <td>2022-11-1</td>
+                    <td>
+                        <ul class="list-actions">
+                            <li>
+                                <a href="subscription-edit.html" class="list-actions-button-edit">Edytuj</a>
+                            </li>
+                            <li>
+                                <a href="subscription-list.html" class="list-actions-button-delete">Usuń</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <p><a href="subscription-form.html" class="button-add">Dodaj nową subskrypcje</a></p>
+    </main>
+    <footer>
+        Piotr Tryfon s17787
+    </footer>
+</body>
+</html>

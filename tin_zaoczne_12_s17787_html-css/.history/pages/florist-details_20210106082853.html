@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Gardener</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+</head>
+<body>
+    <header>
+        <h1>Professional Gardener</h1>
+        <img src="../images/logo.jpg" alt="Professional Gardener">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html" >Strona główna</a></li>
+            <li><a href="client-list.html" >Firmy</a></li>
+            <li><a href="florist-list.html" class="active">Kwiaciarnie</a></li>
+            <li><a href="subscription-list.html" >Subskrypcje</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Szczegóły kwiaciarni</h2>
+        <form class="form">
+            <!--<div class="form-group">-->
+                <label for="Name">Nazwa:<sup>*</sup></label>
+                <input type="text" name="Name" id="Name" value="Wilenska" disabled/>
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <label for="regio_number">Numer regionalny:<sup>*</sup></label>
+                <input type="text" name="regio_number" id="regio_number" value="2312" disabled/>
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <label for="Adres">Adres:<sup>*</sup></label>
+                <input type="text" name="Adres" id="Adres" value="Wileńskiego 5/15" disabled/>
+            <!--</div>-->
+            <!--<div class="form-group">-->
+            <p>
+                <a href="florist-edit.html" class="form-button-submit" >Edytuj</a>  
+            </p> 
+            <!--</div>-->  
+        </form>
+        <h2>Subskrypcje kwiaciarni</h2>
+        <div style="overflow-x:auto;">
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Nazwa Firmy</th>
+                    <th>Wartość subskrypcji</th>
+                    <th>Data od</th>
+                    <th>Data do</th>
+                    <th>Informacje dodatkowe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sony</td>
+                    <td>2000</td>
+                    <td>2020-11-22</td>
+                    <td>2021-01-01</td>
+                    <td>Zostawić przed drzwiami</td>
+                </tr>
+                <tr>
+                    <td>Walmart</td>
+                    <td>5222</td>
+                    <td>2020-11-22</td>
+                    <td>2021-01-01</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <p><a href="florist-list.html" class="form-button-cancel">Powrót</a></p>
+    </main>
+    <footer>
+        Piotr Tryfon s17787
+    </footer>
+</body>
+</html>

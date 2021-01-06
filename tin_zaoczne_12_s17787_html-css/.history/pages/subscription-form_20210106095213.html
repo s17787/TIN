@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Gardener</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <script type="application/javascript" src="js/validationCommon.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Professional Gardener</h1>
+        <img src="../images/logo.jpg" alt="Professional Gardener">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html" >Strona główna</a></li>
+            <li><a href="client-list.html">Firmy</a></li>
+            <li><a href="florist-list.html" >Kwiaciarnie</a></li>
+            <li><a href="subscription-list.html" class="active">Subskrypcje</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nowa subskrypcja</h2>
+        <form class="form">
+            <!--<div class="form-group">-->
+                <label for="florist_Name">Kwiaciarnia<sup>*</sup></label>
+                <select id="florist_Name" name="florist_Name">
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="wilenska" >Wileńska</option>
+                    <option value="poludniowa">Południowa</option>
+                    <option value="polnocna">Północna</option>
+                  </select>
+                  <span id="errorName" class="errors-text"></span>
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <label for="client_Name">Firma:<sup>*</sup></label>
+                <select id="client_Name" name="client_Name">
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="sony">Sony</option>
+                    <option value="walmart">Walmart</option>
+                    <option value="amazon">Amazon</option>
+                  </select>
+                  <span id="errorName" class="errors-text"></span>
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <label for="value">Wartość:<sup>*</sup></label>
+                <input type="text" name="value" id="value" />
+                <span id="errorValue" class="errors-text"></span>
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <label for="Informacje">Informacje dodatkowe:</label>
+                <textarea type="text" name="Informacje" id="Informacje" rows="4" cols="10" style="resize: none;"></textarea>
+                <span id="errorInformation" class="errors-text"></span>
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <label for="date_From">Data Od:<sup>*</sup></label>
+                <input type="date" value="2020-07-22" min="2020-07-22" name="date_From" id="date_From" />
+                <span id="errorDateFrom" class="errors-text"></span>
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <label for="date_To">Data do:<sup>*</sup></label>
+                <input type="date" name="date_To" id="date_To" />
+                <span id="errorDateTo" class="errors-text"></span>
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <p id="errorsSummary" class="errors-text"></p>
+                <p><a href="subscription-list.html" class="form-button-submit" >Dodaj</a></p>
+                <p><a href="subscription-list.html" class="form-button-cancel" >Anuluj</a></p>   
+            <!--</div>--> 
+        </form>
+    </main>
+    <footer>
+        Piotr Tryfon s17787
+    </footer>
+</body>
+</html>
