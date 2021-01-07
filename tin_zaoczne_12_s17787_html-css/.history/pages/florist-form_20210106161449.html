@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Gardener</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <script type="application/javascript" src="../js/validationCommon.js"></script>
+    <script type="application/javascript" src="../js/validationEmpForm.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Professional Gardener</h1>
+        <img src="../images/logo.jpg" alt="Professional Gardener">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html" >Strona główna</a></li>
+            <li><a href="client-list.html" >Firmy</a></li>
+            <li><a href="florist-list.html" class="active">Kwiaciarnie</a></li>
+            <li><a href="subscription-list.html" >Subskrypcje</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nowa kwiaciarnia</h2>
+        <form class="form" novalidate onsubmit="return validateForm()">
+            <!--<div class="form-group">-->
+                <label for="Name">Nazwa:<sup>*</sup></label>
+                <input type="text" name="Name" id="Name" placeholder="2-60 znaków"/>
+                <span id="errorName" class="errors-text"></span>
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <label for="regio_number">Numer regionalny:<sup>*</sup></label>
+                <input type="text" name="regio_number" id="regio_number" placeholder="2-60 znaków"/>
+                <span id="errorRegionNumber" class="errors-text"></span>
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <label for="Adres">Adres:<sup>*</sup></label>
+                <textarea type="text" name="Adres" id="Adres" rows="4" cols="10" style="resize: none;" placeholder="5-100 znaków"></textarea>
+                <span id="errorAdres" class="errors-text"></span>
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <p id="errorsSummary" class="errors-text"></p>
+                <p><input href="client-list.html" class="form-button-submit" type="submit" value="Dodaj" /></p>
+                <p><a href="florist-list.html" class="form-button-cancel" >Anuluj</a></p>     
+            <!--</div>-->  
+        </form>
+    </main>
+    <footer>
+        Piotr Tryfon s17787
+    </footer>
+</body>
+</html>

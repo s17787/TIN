@@ -1,16 +1,16 @@
 function validateForm() {
-    const firstNameInput = document.getElementById('firstName');
-    const lastNameInput = document.getElementById('lastName');
+    const nameInput = document.getElementById('Name');
+    const AdresInput = document.getElementById('Adres');
     const emailInput = document.getElementById('email');
 
-    const errorFirstName = document.getElementById('errorFirstName');
-    const errorLastName = document.getElementById('errorLastName');
+    const errorName = document.getElementById('errorName');
+    const errorAdres = document.getElementById('errorAdres');
     const errorEmail = document.getElementById('errorEmail');
     const errorsSummary = document.getElementById('errorsSummary');
 
     let valid = true;
 
-    resetErrors([firstNameInput, lastNameInput, emailInput], [errorFirstName, errorLastName, errorEmail], errorsSummary);
+    resetErrors([firstNameInput, lastNameInput, emailInput], [errorName, errorLastName, errorEmail], errorsSummary);
 
     if (!checkRequired(firstNameInput.value)) {
         valid = false;
@@ -55,5 +55,10 @@ function validateForm() {
         }
         errorInfo.innerText = "";
     }
-    
+
+    if (!valid) {
+        errorsSummary.innerText = "Formularz zawiera błędy";
+    }
+
+    return valid;
 }
